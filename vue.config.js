@@ -7,5 +7,5 @@ module.exports = {
     'vuetify'
   ],
   publicPath: 'portfolio-with-vuejs',
-  outputDir : 'docs'
+  outputDir: 'docs'
 }
