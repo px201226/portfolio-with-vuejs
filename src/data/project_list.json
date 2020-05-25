@@ -15,7 +15,7 @@
         "moreURL" : "http://www.naver.com"
     },
     {
-        "thumbnail": "assets/static/lostfound.jpg",
+        "thumbnail": "assets/static/face.png",
         "title": "포트폴리오 페이지",
         "subtitle": "VueJs, Vuetify, Webpack",
         "description": "ㅇㅇㅇ",
