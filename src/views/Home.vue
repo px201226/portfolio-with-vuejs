@@ -1,0 +1,95 @@
+<template>
+  <div>
+    <v-spacer />
+    <div style="background-color: #f7f7f7; margin-top: 2.5%">
+      <v-container>
+        <div class="my-2">
+          <h3>이기수</h3>
+        </div>
+        <div class="my-2">
+          <h3>Gisu Lee, B.E.</h3>
+        </div>
+        <div class="my-2">
+          <h4 style="display: inline">(Email: px201226@gmail.com)</h4>
+        </div>
+      </v-container>
+    </div>
+
+    <!-- SECTION: 자기소개
+    ======================================================================-->
+    <div>
+      <v-container style="margin-top: 2.5%; margin-bottom: 2.5%; ">
+        <v-row class="pa-3 d-none d-md-flex">
+          <v-col cols="12" md="6">
+            <profile />
+
+            <v-row justify="center" class="text-center">
+              <v-btn color="pink lighten-1" outlined="outlined" to="/contact">
+                <v-icon left="left">mdi-phone-hangup</v-icon>Contact
+              </v-btn>
+            </v-row>
+          </v-col>
+          <v-col class="my-auto text-center" cols="12" md="6">
+            <v-img src="@/images/face.png" class="grey lighten-2 face mx-auto" width="200" />
+          </v-col>
+        </v-row>
+        <v-row class="pa-3 d-md-none">
+          <v-col class="my-auto text-center" cols="12" md="6">
+            <v-img class="grey lighten-2 face mx-auto" src="@/images/face.png" width="200" />
+          </v-col>
+          <v-col cols="12" md="6">
+            <profile />
+            <br />
+            <v-row class="text-center" justify="center">
+              <v-btn color="pink lighten-1" outlined="outlined" to="/contact">
+                <v-icon left="left">mdi-phone-hangup</v-icon>Contact
+              </v-btn>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <!-- SECTION: 자기소개 -->
+  </div>
+</template>
+
+<script>
+import profile from "../components/profile.vue";
+export default {
+  name: "Home",
+  components: {
+    profile
+  },
+
+  data() {
+    return {};
+  }
+};
+</script>
+
+<style scoped>
+.face {
+  width: 300px;
+  height: auto;
+}
+
+.cardImg {
+  width: 40px;
+  height: 40px;
+}
+
+.left-line {
+  border-left: 4px solid #41b883;
+}
+
+@media (min-width: 960px) {
+  .picture-top {
+    margin-bottom: 50px !important;
+  }
+}
+.spacing-playground .v-select .v-input__prepend-outer,
+.spacing-playground .v-select .v-input__append-outer {
+  margin-top: 0.55rem;
+  margin-right: 0.2rem;
+}
+</style>

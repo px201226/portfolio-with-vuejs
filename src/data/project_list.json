@@ -1,0 +1,24 @@
+[
+    {
+        "thumbnail": "../assets/static/lostfound.jpg",
+        "title": "분실물 관리 시스템",
+        "subtitle": "Android, REST API, Oracle DB",
+        "description": "ㅇㅇㅇ",
+        "moreURL" : "http://www.naver.com"
+    },
+
+    {
+        "thumbnail": "../assets/static/portfolio.PNG",
+        "title": "포트폴리오 페이지",
+        "subtitle": "VueJs, Vuetify, Webpack",
+        "description": "ㅇㅇㅇ",
+        "moreURL" : "http://www.naver.com"
+    },
+    {
+        "thumbnail": "../assets/static/lostfound.jpg",
+        "title": "포트폴리오 페이지",
+        "subtitle": "VueJs, Vuetify, Webpack",
+        "description": "ㅇㅇㅇ",
+        "moreURL" : "http://www.naver.com"
+    }
+]
