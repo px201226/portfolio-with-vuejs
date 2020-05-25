@@ -4,7 +4,7 @@
       <v-flex class="justify-center" xs12="xs12" sm6="sm6" md6="md6" lg4="lg4" xl3="xl3" v-for="(project,i) in projectList" :key="i">
 
       <hoverCard
-        :thumbnail="project.thumbnail"
+        :thumbnail="`${publicPath}${project.thumbnail}`"
         :title="project.title"
         :subtitle="project.subtitle"
         :description="project.description"
@@ -27,6 +27,7 @@ export default {
 
   data() {
     return {
+      publicPath: process.env.BASE_URL,
       projectList : JsonProjectList
     };
   }
