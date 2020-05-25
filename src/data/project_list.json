@@ -8,7 +8,7 @@
     },
 
     {
-        "thumbnail": "assets/static/portfolio.PNG",
+        "thumbnail": "assets/static/portfolio.png",
         "title": "포트폴리오 페이지",
         "subtitle": "VueJs, Vuetify, Webpack",
         "description": "ㅇㅇㅇ",
