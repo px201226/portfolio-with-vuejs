@@ -1,7 +1,7 @@
 <template>
   <v-container class="wrap">
-    <v-layout row wrap>
-      <v-flex class="justify-center" xs12="xs12" sm6="sm6" md6="md6" lg4="lg4" xl3="xl3" v-for="(project,i) in projectList" :key="i">
+    <v-layout row wrap justify-center >
+      <div v-for="(project,i) in projectList" :key="i">
 
       <hoverCard
         :thumbnail="`${publicPath}${project.thumbnail}`"
@@ -10,7 +10,7 @@
         :description="project.description"
         :moreURL="project.moreURL"
       ></hoverCard>
-      </v-flex>
+      </div>
 
     </v-layout>
   </v-container>

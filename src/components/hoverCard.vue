@@ -1,6 +1,6 @@
 <template>
-  <v-flex >
-    <v-card class="align-self-center mx-3 my-3" max-width="344">
+ <v-flex xs12>
+    <v-card  class="mx-3 my-3" max-width="344" >
       <v-img :src="thumbnail" height="200px"></v-img>
 
       <v-card-title>{{title}}</v-card-title>
@@ -25,7 +25,7 @@
         </div>
       </v-expand-transition>
     </v-card>
-  </v-flex>
+ </v-flex>
 </template>
 
 <script>

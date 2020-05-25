@@ -3,16 +3,19 @@
     <!-- SECTION: 상단 AppBar
     ======================================================================-->
     <v-app-bar app color="blue-grey lighten-5" flat>
+     
+
       <v-container>
-        <v-layout align-center justify-center>
+        
+        <v-layout row align-center >
           <!-- 오른쪽 상단 Menu Mobile용 -->
-          <div class="d-md-none">
+           <div class="d-md-none">
             <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
           </div>
-
+          
           <v-toolbar-title
             class="text-uppercase font-weight-bold toolbar-title mx-5"
-            align="center"
+          
           >
             <span class="headline">{{this.$route.name}}</span>
           </v-toolbar-title>
