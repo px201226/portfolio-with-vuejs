@@ -6,6 +6,6 @@ module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
-
+  publicPath: 'portfolio-with-vuejs',
   outputDir : 'docs'
 }
