@@ -6,6 +6,8 @@ module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
-  publicPath: 'portfolio-with-vuejs',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/portfolio-with-vuejs/'
+    : '/',
   outputDir: 'docs'
 }
