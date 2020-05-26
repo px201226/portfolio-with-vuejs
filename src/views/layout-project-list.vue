@@ -7,7 +7,7 @@
           :title="project.title"
           :subtitle="project.subtitle"
           :description="project.description"
-          :moreURL="project.moreURL"
+          :detailURL="project.detailURL"
         ></comp-project-preview-card>
       </v-flex>
     </v-layout>

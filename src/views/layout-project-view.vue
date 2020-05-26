@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout :grid-list-md="!$vuetify.breakpoint.xs" row wrap>
-      <comp-subpage-title contentHtml="이기수<br>Gisu Lee, B.E.<br>(Email: px201226@gmail.com)" />
+      <comp-subpage-title contentHtml="{{this.$route.params.name}}" />
     </v-layout>
   </v-container>
 </template>
