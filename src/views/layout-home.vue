@@ -1,20 +1,10 @@
 <template>
   <div>
     <v-spacer />
-    <div style="background-color: #f7f7f7; margin-top: 2.5%">
-      <v-container>
-        <div class="my-2">
-          <h3>이기수</h3>
-        </div>
-        <div class="my-2">
-          <h3>Gisu Lee, B.E.</h3>
-        </div>
-        <div class="my-2">
-          <h4 style="display: inline">(Email: px201226@gmail.com)</h4>
-        </div>
-      </v-container>
-    </div>
-
+    <comp-subpage-title
+      contentHtml="이기수<br>Gisu Lee, B.E.<br>(Email: px201226@gmail.com)"
+    />
+   
     <!-- SECTION: 자기소개
     ======================================================================-->
     <div>
@@ -54,11 +44,13 @@
 </template>
 
 <script>
+import comp_subpage_title from "../components/comp-subpage-title.vue";
 import profile from "../components/profile.vue";
 export default {
-  name: "Home",
+  name: "layout-home",
   components: {
-    profile
+    profile,
+    "comp-subpage-title": comp_subpage_title
   },
 
   data() {

@@ -1,20 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Projects from '../views/Projects.vue'
+import layout_home from '../views/layout-home.vue'
+import layout_projcet_list from '../views/layout-project-list.vue'
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: layout_home
   },
 
   {
      path: '/projects',
      name: 'Projects',
-    component: Projects
+     component: layout_projcet_list
   },
   
 
@@ -29,7 +29,6 @@ Vue.use(VueRouter)
 ]
 
 const router = new VueRouter({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
