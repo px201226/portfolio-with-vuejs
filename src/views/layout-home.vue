@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-spacer />
-    <comp-subpage-title
+    <app-content-title
       contentHtml="이기수<br>Gisu Lee, B.E.<br>(Email: px201226@gmail.com)"
     />
    
@@ -44,13 +44,13 @@
 </template>
 
 <script>
-import comp_subpage_title from "../components/comp-subpage-title.vue";
+import app_content_title from "../components/app-content-title.vue";
 import profile from "../components/profile.vue";
 export default {
   name: "layout-home",
   components: {
     profile,
-    "comp-subpage-title": comp_subpage_title
+    'app-content-title': app_content_title
   },
 
   data() {

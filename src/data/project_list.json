@@ -1,24 +1,25 @@
 [
     {
+        "pid" : "lostfound",
         "thumbnail": "assets/static/lostfound.jpg",
         "title": "분실물 관리 시스템",
         "subtitle": "Android, REST API, Oracle DB",
-        "description": "ㅇㅇㅇ",
-        "detailURL" : "http://www.naver.com"
+        "description": "ㅇㅇㅇ"
+        
     },
 
     {
+        "pid" : "portfolio",
         "thumbnail": "assets/static/portfolio.png",
         "title": "포트폴리오 페이지",
         "subtitle": "VueJs, Vuetify, Webpack",
-        "description": "ㅇㅇㅇ",
-        "detailURL" : "http://www.naver.com"
+        "description": "ㅇㅇㅇ"
     },
     {
-        "thumbnail": "",
+        "pid" : "portfolio",
+        "thumbnail": "assets/static/portfolio.png",
         "title": "포트폴리오 페이지",
         "subtitle": "VueJs, Vuetify, Webpack",
-        "description": "ㅇㅇㅇ",
-        "detailURL" : "http://www.naver.com"
+        "description": "ㅇㅇㅇ"
     }
 ]
