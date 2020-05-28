@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import app_bar from "./components/app-bar";
+import AppBar from "./components/AppBar";
 export default {
   name: 'App',
 
   components: {
-    'app-bar' : app_bar
+    AppBar
   },
 
   data: () => ({

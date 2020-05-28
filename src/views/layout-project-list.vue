@@ -15,19 +15,33 @@
 </template>
 
 <script>
-import app_card from "../components/app-card.vue";
-import json_project_list from "../data/project_list.json";
+import AppCard from "../components/AppCard.vue";
+const axios = require("axios");
+
 export default {
   name: "layout-project-list",
   components: {
-    'app-card': app_card
+    AppCard
   },
 
   data() {
     return {
       publicPath: process.env.BASE_URL,
-      projectList: json_project_list
+      projectList: ""
     };
+  },
+  methods: {
+    fetchData() {
+      axios
+        .get(this.publicPath + "assets/static/project/project_list.json")
+        .then(response => {
+          this.projectList = response.data;
+        });
+    }
+  },
+
+  created() {
+    this.fetchData();
   }
 };
 </script>

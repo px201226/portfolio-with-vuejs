@@ -2,6 +2,7 @@
   <div>
     <v-spacer />
     <app-content-title
+      class="headline font-weight-black"
       contentHtml="이기수<br>Gisu Lee, B.E.<br>(Email: px201226@gmail.com)"
     />
    
@@ -44,13 +45,13 @@
 </template>
 
 <script>
-import app_content_title from "../components/app-content-title.vue";
+import AppContentTitle from "../components/AppContentTitle.vue";
 import profile from "../components/profile.vue";
 export default {
   name: "layout-home",
   components: {
     profile,
-    'app-content-title': app_content_title
+    AppContentTitle
   },
 
   data() {
