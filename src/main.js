@@ -5,6 +5,7 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import axios from 'axios'
 import '@babel/polyfill'
+export const eventBus = new Vue();
 
 Vue.config.productionTip = false
 

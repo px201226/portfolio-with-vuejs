@@ -7,6 +7,8 @@
 
 
 <script>
+import {eventBus} from "../main.js";
+
 const marked = require("marked");
 const axios = require("axios");
 const tags = [
@@ -40,13 +42,11 @@ export default {
   },
 
   created() {
-    if (this.markdownURL == "") {
-      console.log("create false");
-      this.fetchData(false);
-    }else{
-      console.log("create true");
-      this.fetchData(true);
-    }
+    eventBus.$on('receivedURL',(a) => {
+        if(a == true){
+          this.fetchData(true);
+        }
+    });
   },
 
   updated() {

@@ -14,6 +14,7 @@
 <script>
 import AppContentTitle from "../components/AppContentTitle.vue";
 import AppMarkdownView from"../components/AppMarkdownView.vue";
+import {eventBus} from "../main.js";
 
 const axios = require("axios");
 
@@ -42,7 +43,12 @@ export default {
         )
         .then(response => {
           this.project = response.data;
+          this.sendEventBus();
         });
+    },
+
+    sendEventBus(){
+      eventBus.$emit('receivedURL',true);
     }
   },
   created() {
