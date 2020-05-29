@@ -1,8 +1,6 @@
 <template>
   <v-container>
     <div v-html="convertMarktoHtml" />
-    
-    {{convertMarktoHtml}}
   </v-container>
 </template>
 
@@ -30,19 +28,28 @@ const tags = [
   "code",
   "table",
   "blockquote",
-  "p"
+  "p",
+  "li"
 ];
 export default {
   props: ["markdownURL"],
   data() {
     return {
       markdown: ""
-      
     };
   },
 
   created() {
-    this.fetchData();
+    console.log("markdownURL = " + this.markdownURL);
+    this.fetchData(false);
+  },
+
+  updated() {
+    if (this.markdownURL != "") {
+      console.log("up");
+      console.log("markdownURL = " + this.markdownURL);
+      this.fetchData(true);
+    }
   },
 
   computed: {
@@ -62,49 +69,57 @@ export default {
       });
 
       let markedHTML = marked(this.markdown);
-      markedHTML = this.setPrefixHTMLClass(markedHTML, "my-10");
+      markedHTML = this.setPrefixHTMLClass(markedHTML, "my-3");
       return markedHTML;
     }
   },
 
-  methods: {
-    fetchData() {
+  methods: { 
+    fetchData(isReady) {
       axios.get(this.markdownURL).then(response => {
+        if(isReady==false){
+          this.markdown = "#";
+          return;
+        }
         this.markdown = response.data;
       });
     },
 
+    setCustomRenderer(renderer) {
+      renderer.heading = function(text, level) {
+        if (level <= 2) {
+          return (
+            "<h" +
+            level +
+            ' class="mt-6">' +
+            text +
+            "</h" +
+            level +
+            '><hr color="#CFD8DC" size="5" class="mb-5">'
+          );
+        } else {
+          return "<h" + level + ">" + text + "</h" + level + ">";
+        }
+      };
+
+      renderer.hr = function() {
+        return '<hr color="#ECEFF1" size="7">';
+      };
+    },
+
     setPrefixHTMLClass(markedHTML, prefix) {
-      let changedHTML = markedHTML; 
+      let changedHTML = markedHTML;
       if (prefix != "") {
         for (let tag of tags) {
           let classTempName;
           let regex = new RegExp("<" + tag + ">", "g"); // 시작 태그 찾기
           changedHTML = changedHTML.replace(
             regex,
-            `<${tag} class="${prefix}">`
+            `<${tag} class="${prefix} my-4">`
           );
         }
       }
       return changedHTML; // changedText라는 새로운 값을 반환
-    },
-
-    setCustomRenderer(renderer) {
-      renderer.heading = function(text, level) {
-       if(level <=2 ){
-        return (
-          "<h" +
-          level +
-          ' class="">'+
-          text +
-          "</h" +
-          level +
-          "><hr>"
-        );
-       }else{
-         return ("<h" + level + ">" + text + "<h" + level + ">");
-       }
-      };
     }
   }
 };

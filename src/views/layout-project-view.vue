@@ -6,14 +6,13 @@
         :contentHtml="project.title"
       />
 
-      <app-markdown-view markdownURL="https://raw.githubusercontent.com/HyeminNoh/MVC_JavaWebProject/master/README.md" />
+      <app-markdown-view :markdownURL="project.markdownURL" />
     </v-layout>
   </v-container>
 </template>
 
 <script>
 import AppContentTitle from "../components/AppContentTitle.vue";
-import AppCard from "../components/AppCard.vue";
 import AppMarkdownView from"../components/AppMarkdownView.vue";
 
 const axios = require("axios");
@@ -22,13 +21,13 @@ const axios = require("axios");
 export default {
   name: "layout-project-view",
   components: {
-    AppContentTitle,AppCard,AppMarkdownView
+    AppContentTitle,AppMarkdownView
   },
 
   data() {
     return {
       publicPath: process.env.BASE_URL,
-      project: "",
+      project: {id:"", title:"", markdownURL:""},
     };
   },
  
