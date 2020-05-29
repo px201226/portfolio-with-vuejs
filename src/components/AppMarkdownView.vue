@@ -44,18 +44,11 @@ export default {
   created() {
     eventBus.$on('receivedURL',(a) => {
         if(a == true){
-          this.fetchData(true);
+          this.fetchData();
         }
     });
   },
 
-  updated() {
-    if (this.markdownURL != "") {
-      console.log("up");
-      console.log("markdownURL = " + this.markdownURL);
-      this.fetchData(true);
-    }
-  },
 
   computed: {
     convertMarktoHtml() {
@@ -82,10 +75,6 @@ export default {
   methods: { 
     fetchData(isReady) {
       axios.get(this.markdownURL).then(response => {
-        if(isReady==false){
-          this.markdown = "#  ";
-          return;
-        }
         this.markdown = response.data;
       });
     },
