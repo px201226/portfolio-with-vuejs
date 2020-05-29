@@ -42,10 +42,12 @@ export default {
   },
 
   created() {
-    eventBus.$on('receivedURL',(a) => {
-        if(a == true){
-          this.fetchData();
-        }
+    eventBus.$on('receivedURL',markedURL => {
+       
+          console.log("received " + markedURL);
+          
+          this.fetchData(markedURL);
+        
     });
   },
 
@@ -73,8 +75,8 @@ export default {
   },
 
   methods: { 
-    fetchData(isReady) {
-      axios.get(this.markdownURL).then(response => {
+    fetchData(markedURL) {
+      axios.get(markedURL).then(response => {
         this.markdown = response.data;
       });
     },

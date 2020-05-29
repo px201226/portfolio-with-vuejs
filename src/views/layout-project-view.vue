@@ -43,12 +43,15 @@ export default {
         )
         .then(response => {
           this.project = response.data;
-          this.sendEventBus();
+          console.log("send " + this.project.markdownURL);
+          
+          this.sendEventBus(this.project.markdownURL);
         });
     },
 
-    sendEventBus(){
-      eventBus.$emit('receivedURL',true);
+    sendEventBus(urlx){
+      console.log("send " + this.project.markdownURL);
+      eventBus.$emit('receivedURL',urlx);
     }
   },
   created() {
