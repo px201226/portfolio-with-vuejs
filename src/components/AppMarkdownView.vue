@@ -40,8 +40,11 @@ export default {
   },
 
   created() {
-    console.log("markdownURL = " + this.markdownURL);
-    this.fetchData(false);
+    if (this.markdownURL == "") {
+      this.fetchData(false);
+    }else{
+      this.fetchData(true);
+    }
   },
 
   updated() {
@@ -78,7 +81,7 @@ export default {
     fetchData(isReady) {
       axios.get(this.markdownURL).then(response => {
         if(isReady==false){
-          this.markdown = "#";
+          this.markdown = "#  ";
           return;
         }
         this.markdown = response.data;
