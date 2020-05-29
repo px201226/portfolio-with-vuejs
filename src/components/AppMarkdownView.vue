@@ -41,8 +41,10 @@ export default {
 
   created() {
     if (this.markdownURL == "") {
+      console.log("create false");
       this.fetchData(false);
     }else{
+      console.log("create true");
       this.fetchData(true);
     }
   },
