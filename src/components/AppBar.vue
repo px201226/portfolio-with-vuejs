@@ -2,7 +2,7 @@
   <nav>
     <!-- SECTION: 상단 AppBar
     ======================================================================-->
-    <v-app-bar app color="blue-grey lighten-5" flat>
+    <v-app-bar app color="" flat>
      
 
       <v-container>
@@ -70,7 +70,7 @@
 
 <script>
 export default {
-  name: "AppBar",
+  name: "app-bar",
   data() {
     return {
       drawer: null,
@@ -90,3 +90,4 @@ export default {
   }
 };
 </script>
+

@@ -1,6 +1,8 @@
 <template>
   <v-container>
     <div v-html="convertMarktoHtml" />
+
+    {{convertMarktoHtml}}
   </v-container>
 </template>
 
@@ -87,7 +89,7 @@ export default {
           return (
             "<h" +
             level +
-            ' class="mt-6">' +
+            ' class="mt-10">' +
             text +
             "</h" +
             level +
@@ -101,6 +103,11 @@ export default {
       renderer.hr = function() {
         return '<hr color="#ECEFF1" size="7">';
       };
+      
+      renderer.listitem = function(text, task, checked){
+        return '<li class="linone li-color my-3">' + text + "</li>";
+      };
+    
     },
 
     setPrefixHTMLClass(markedHTML, prefix) {
