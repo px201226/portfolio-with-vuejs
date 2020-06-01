@@ -1,12 +1,12 @@
 <template>
-  <v-card class="mx-3 my-3">
+  <v-card class="mx-3 my-3" @click="goTodetail(pid)" >
     <v-img :src="getThumbnail" height="200px"></v-img>
 
     <v-card-title>{{title}}</v-card-title>
 
     <v-card-subtitle>{{subtitle}}</v-card-subtitle>
 
-    <v-card-actions>
+    <!-- <v-card-actions>
       <v-btn color="purple" text="text" @click="goTodetail(pid)">자세히</v-btn>
 
       <v-spacer></v-spacer>
@@ -22,7 +22,7 @@
 
         <v-card-text>{{description}}</v-card-text>
       </div>
-    </v-expand-transition>
+    </v-expand-transition> -->
   </v-card>
 </template>
 
@@ -58,7 +58,7 @@ export default {
 
   data() {
     return {
-      show: false
+  
     };
   },
   computed: {

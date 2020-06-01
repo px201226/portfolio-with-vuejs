@@ -28,8 +28,6 @@ const tags = [
   "ol",
   "a",
   "img",
-  "pre",
-  "code",
   "table",
   "blockquote",
   "p",
@@ -84,6 +82,8 @@ export default {
     },
 
     setCustomRenderer(renderer) {
+
+      // h1,h2 태그 커스텀
       renderer.heading = function(text, level) {
         if (level <= 2) {
           return (
@@ -93,21 +93,31 @@ export default {
             text +
             "</h" +
             level +
-            '><hr color="#CFD8DC" size="5" class="mb-5">'
+            '><hr color="#CFD8DC" size="4" class="mb-5">'
           );
         } else {
           return "<h" + level + ">" + text + "</h" + level + ">";
         }
       };
 
+      // hr 태그 커스텀
       renderer.hr = function() {
         return '<hr color="#ECEFF1" size="7">';
       };
       
+
+      // li 태그 커스텀
       renderer.listitem = function(text, task, checked){
-        return '<li class="linone li-color my-3">' + text + "</li>";
+        return '<li class="none listyle my-3">' + text + "</li>";
       };
-    
+
+      renderer.codespan = function(code) {
+        return '<code style="color:red">' + code + "</code>";
+      };
+
+       renderer.code = function(code) {
+        return '<pre><code style="color:black; font-family:bold; background-color:rgba(0,0,0,0); box-shadow: none">' + code + "</code></pre>";
+      };
     },
 
     setPrefixHTMLClass(markedHTML, prefix) {

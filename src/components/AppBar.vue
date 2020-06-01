@@ -2,21 +2,15 @@
   <nav>
     <!-- SECTION: 상단 AppBar
     ======================================================================-->
-    <v-app-bar app color="" flat>
-     
-
+    <v-app-bar app color flat>
       <v-container>
-        
-        <v-layout row align-center >
+        <v-layout row align-center>
           <!-- 오른쪽 상단 Menu Mobile용 -->
-           <div class="d-md-none">
+          <div class="d-md-none">
             <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
           </div>
-          
-          <v-toolbar-title
-            class="text-uppercase font-weight-bold toolbar-title mx-5"
-          
-          >
+
+          <v-toolbar-title class="text-uppercase font-weight-bold toolbar-title mx-5">
             <span class="headline">{{this.$route.name}}</span>
           </v-toolbar-title>
           <v-spacer />
@@ -77,7 +71,7 @@ export default {
       links: [
         { icon: "mdi-home", text: "Home", route: "/" },
         { icon: "mdi-file-account", text: "Projects", route: "/projects" },
-        { icon: "mdi-github ", text: "GitHub", href: "https://github.com/" },
+        { icon: "mdi-github ", text: "GitHub", href: "https://github.com/GisuLee" },
         { icon: "mdi-blogger", text: "Blog", href: "#" }
       ]
     };
