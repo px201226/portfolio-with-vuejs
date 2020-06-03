@@ -12,7 +12,7 @@
       <v-container style="margin-top: 2.5%; margin-bottom: 2.5%; ">
         <v-row class="pa-3 d-none d-md-flex">
           <v-col cols="12" md="6">
-            <profile />
+            <my-profile />
 
             <v-row justify="center" class="text-center">
               <v-btn color="pink lighten-1" outlined="outlined" to="/contact">
@@ -46,11 +46,11 @@
 
 <script>
 import AppContentTitle from "../components/AppContentTitle.vue";
-import profile from "../components/profile.vue";
+import MyProfile from "../components/MyProfile.vue";
 export default {
   name: "layout-home",
   components: {
-    profile,
+    MyProfile,
     AppContentTitle
   },
 
