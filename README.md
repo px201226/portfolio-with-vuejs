@@ -27,3 +27,25 @@ gradle
 ### 3. 프로젝트 상세설명 페이지
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)     
 상세설명 페이지 역시 <strong>Github Repository</strong>의 <strong>Markdown(ReadMe.md)</strong> 파일을 렌더링하여, 유연성과 범용성을 높였습니다.
+
+---------------
+
+## 3. 사용법   
+### project Download
+'''
+git 
+'''
+### Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
