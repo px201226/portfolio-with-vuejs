@@ -5,6 +5,8 @@ Vue.js를 공부하고 이후 작은 프로젝트를 통해 직접 활용함으�
 
 ## 2. 소개   
 1. 프로필 
+<img src="https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+<img src="https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
 2. 프로젝트 페이지
