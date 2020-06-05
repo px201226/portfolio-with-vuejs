@@ -31,7 +31,7 @@ gradle
 ---------------
 
 ## 3. 사용법   
-### project Download
+### Project install
 ```
 git clone https://github.com/GisuLee/portfolio-with-vuejs.git 
 ```
