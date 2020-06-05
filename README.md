@@ -5,17 +5,15 @@ Vue.js를 공부하고 이후 작은 프로젝트를 통해 직접 활용함으�
 
 ## 2. 소개   
 1. 프로필 화면   
-![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)   
-데스크탑 화면   
-![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)    
-모바일 화면   
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)     
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)      
 ---------------------------------
 
 2. 프로젝트 페이지
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)     
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)    
 
-프로젝트 페이지의 데이터들은 <strong>Github Repository</strong>와 연동하여 동적으로 생성합니다.
+리스트 데이터들은 <strong>Github Repository</strong>와 연동하여 동적으로 다운받아, 프로젝트 빌드없이 데이터를 추가,삭제,편집할 수 있게 하였습니다.
 
 ---------------------------------
 
