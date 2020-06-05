@@ -14,7 +14,7 @@ Vue.js를 공부하고 이후 작은 프로젝트를 통해 직접 활용함으�
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)    
 
 리스트 데이터들은 <strong>Github Repository</strong>와 연동하여 동적으로 다운받아,   
-프로젝트 빌드없이 데이터를 추가, 삭제할 수 있게 하였습니다.
+프로젝트 빌드없이 데이터를 추가, 삭제할 수 있게 하였습니다.    
 ---------------------------------
 
 
