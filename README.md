@@ -32,9 +32,9 @@ gradle
 
 ## 3. 사용법   
 ### project Download
-'''
-git 
-'''
+```
+git clone https://github.com/GisuLee/portfolio-with-vuejs.git 
+```
 ### Project setup
 ```
 npm install
