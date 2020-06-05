@@ -4,61 +4,14 @@ Vue.js를 활용한 포트폴리오 제작
 Vue.js를 공부하고 이후 작은 프로젝트를 통해 직접 활용함으로서 Vue.js에 대한 이해도를 높임```강조입니다```
 
 ## 2. 소개   
-* 프로필 화면   
+1. 프로필 화면   
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
+  
 -----
 
-<img src="https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
-<img src="https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
-![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
-![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
+
 2. 프로젝트 페이지
 
 
 3. 프로젝트 상세설명 페이지
-
-## 3. 프로젝트 결과
-![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
-- 링크: [https://hyem-portfolio.firebaseapp.com](https://hyem-portfolio.firebaseapp.com)  
-
-## 4. 진행과정
-* 2019-11-06 "Vue.js 코딩 공작소"를 활용해 학습    
-  : [MVVM패턴](https://hyem-study.tistory.com/20), [생명주기](https://hyem-study.tistory.com/21), 조건문, 반복문 실습  
-
-* 2019-11-15 "Vue.js 코딩 공작소"를 활용해 학습2    
-  : [컴포넌트](https://hyem-study.tistory.com/25), 트렌지션, 애니메이션 등
-
-* 2019-11-17  
-  : hyem-portfolio 프로젝트 생성(Vue-CLI를 활용), 
-    프로젝트 구조 이해  
-
-* 2019-12-05  
-  : Firebase를 활용한 호스팅
-
-* 2019-12-13  
-  : 헤더와 뷰 부분을 분리해서 추가
-    Home, About 페이지 추가 (미완성) 
-
-* 2019-12-17  
-  : About -> Profile로 파일명 수정,  
-    Profile 내용 추가  
-    Skills, Projects 경로와 파일 생성  
-
-* 2019-12-18  
-  : Skills에 chart.js활용 그래프 추가  
-
-* 2019-12-20  
-  : Skills에 Image추가,  
-    이미지에 text overlay 기능 추가 (진행중)  
-    
-* 2019-12-21  
-  : 이미지 overlay 기능 구현 완료,  
-    skills.json 생성,  
-    json데이터 로드 후 파싱해서 리스트화,  
-    리스트의 이미지로드 과정에서 CORS문제 발생 해결 진행 중  
-    
-* 2020-01-05  
-  : skills.json을 firebase rtdb에 이동,  
-    프로젝트 이력에 대한 데이터 rtdb에 추가  
-    firebase로부터 데이터 로드 후 파싱해서 리스트화(Skills.vue 수정, Projects.vue 생성)  
-    배포완료  
-x
