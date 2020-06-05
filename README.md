@@ -4,7 +4,9 @@ Vue.js를 활용한 포트폴리오 제작
 Vue.js를 공부하고 이후 작은 프로젝트를 통해 직접 활용함으로서 Vue.js에 대한 이해도를 높임```강조입니다```
 
 ## 2. 소개   
-**1. 프로필**   
+* 프로필 화면   
+-----
+
 <img src="https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 <img src="https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
