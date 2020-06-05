@@ -6,8 +6,9 @@ Vue.js를 공부하고 이후 작은 프로젝트를 통해 직접 활용함으�
 ## 2. 소개   
 1. 프로필 화면   
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
+[PC]
 ![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
-  
+[모바일]
 -----
 
 
