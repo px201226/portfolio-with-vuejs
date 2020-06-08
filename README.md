@@ -1,61 +1,51 @@
 Vue.js를 활용한 포트폴리오 제작
 =======================
 ## 1. 개요
-Vue.js를 공부하고 이후 작은 프로젝트를 통해 직접 활용함으로서 Vue.js에 대한 이해도를 높임```강조입니다```
-
-## 2. 목표
-##### < 포트폴리오 사이트 제작 >
-```
-- SPA구조
-- 메인 화면
-- 프로필
+Vue.js를 공부하고 이후 작은 프로젝트를 통해 직접 활용함으로서 Vue.js에 대한 이해도를 높임   
 - 기술스택
-- 프로젝트 이력
+```
+Vue.js
+Vuetify
+Webpack
+npm 
+gradle
 ```
 
-## 3. 프로젝트 결과
-![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)  
-- 링크: [https://hyem-portfolio.firebaseapp.com](https://hyem-portfolio.firebaseapp.com)  
+## 2. 소개   
+### 1. 프로필 화면   
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuesStudy/master/hyem-portfolio/screenshoot.png)     
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/master/hyem-portfolio/screenshoot.png)      
+---------------------------------
 
-## 4. 진행과정
-* 2019-11-06 "Vue.js 코딩 공작소"를 활용해 학습    
-  : [MVVM패턴](https://hyem-study.tistory.com/20), [생명주기](https://hyem-study.tistory.com/21), 조건문, 반복문 실습  
+### 2. 프로젝트 페이지
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStud/master/hyem-portfolio/screenshoot.png)     
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStud/master/hyem-portfolio/screenshoot.png)    
+리스트 데이터들은 <strong>Github Repository</strong>와 연동하여 프로젝트 빌드없이 데이터를 추가, 삭제할 수 있게 하였습니다.
 
-* 2019-11-15 "Vue.js 코딩 공작소"를 활용해 학습2    
-  : [컴포넌트](https://hyem-study.tistory.com/25), 트렌지션, 애니메이션 등
+---------------------------------
 
-* 2019-11-17  
-  : hyem-portfolio 프로젝트 생성(Vue-CLI를 활용), 
-    프로젝트 구조 이해  
+### 3. 프로젝트 상세설명 페이지
+![ScreenShoot](https://raw.githubusercontent.com/HyeminNoh/VuejsStudy/aster/hyem-portfolio/screenshoot.png)     
+상세설명 페이지 역시 <strong>Github Repository</strong>의 <strong>Markdown(ReadMe.md)</strong> 파일을 렌더링하여, 유연성과 범용성을 높였습니다.
 
-* 2019-12-05  
-  : Firebase를 활용한 호스팅
+---------------
 
-* 2019-12-13  
-  : 헤더와 뷰 부분을 분리해서 추가
-    Home, About 페이지 추가 (미완성) 
+## 3. 사용법   
+### Project install
+```
+git clone https://github.com/GisuLee/portfolio-with-vuejs.git 
+```
+### Project setup
+```
+npm install
+```
 
-* 2019-12-17  
-  : About -> Profile로 파일명 수정,  
-    Profile 내용 추가  
-    Skills, Projects 경로와 파일 생성  
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-* 2019-12-18  
-  : Skills에 chart.js활용 그래프 추가  
-
-* 2019-12-20  
-  : Skills에 Image추가,  
-    이미지에 text overlay 기능 추가 (진행중)  
-    
-* 2019-12-21  
-  : 이미지 overlay 기능 구현 완료,  
-    skills.json 생성,  
-    json데이터 로드 후 파싱해서 리스트화,  
-    리스트의 이미지로드 과정에서 CORS문제 발생 해결 진행 중  
-    
-* 2020-01-05  
-  : skills.json을 firebase rtdb에 이동,  
-    프로젝트 이력에 대한 데이터 rtdb에 추가  
-    firebase로부터 데이터 로드 후 파싱해서 리스트화(Skills.vue 수정, Projects.vue 생성)  
-    배포완료  
-x
+### Compiles and minifies for production
+```
+npm run build
+```
