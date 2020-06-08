@@ -8,7 +8,7 @@
 
     }
 
-    code {
+    code.a {
         font-family: Consolas,"courier new";
         color: blue;
         background-color: #8f0505;
@@ -41,7 +41,7 @@
     li.listyle::before {
       content: "\2022";
       /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: red;
+      color: green;
       /* Change the color */
       font-weight: bold;
       /* If you want it to be bold */

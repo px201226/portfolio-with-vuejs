@@ -25,12 +25,15 @@ const tags = [
   "del",
   "u",
   "ul",
+  "li",
+  "pre",
   "ol",
   "a",
   "img",
   "table",
   "blockquote",
   "p",
+  "hr",
   "li"
 ];
 export default {

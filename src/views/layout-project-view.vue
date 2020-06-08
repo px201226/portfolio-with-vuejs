@@ -43,7 +43,10 @@ export default {
         )
         .then(response => {
           this.project = response.data;
-          console.log("send " + this.project.markdownURL);
+          console.log("get " + this.publicPath +
+            "assets/static/project/" +
+            this.$route.params.id +
+            ".json");
           
           this.sendEventBus(this.project.markdownURL);
         });

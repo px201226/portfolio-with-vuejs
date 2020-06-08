@@ -29,7 +29,7 @@
             <v-img class="grey lighten-2 face mx-auto" src="@/images/face.png" width="200" />
           </v-col>
           <v-col cols="12" md="6">
-            <profile />
+            <MyProfile />
             <br />
             <v-row class="text-center" justify="center">
               <v-btn color="pink lighten-1" outlined="outlined" to="/contact">
