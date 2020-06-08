@@ -96,7 +96,7 @@ export default {
             text +
             "</h" +
             level +
-            '><hr color="#CFD8DC" size="4" class="mb-5">'
+            '><hr color="#CFD8DC" size="4" class="mt-3 mb-5">'
           );
         } else {
           return "<h" + level + ">" + text + "</h" + level + ">";
@@ -131,7 +131,7 @@ export default {
           let regex = new RegExp("<" + tag + ">", "g"); // 시작 태그 찾기
           changedHTML = changedHTML.replace(
             regex,
-            `<${tag} class="${prefix} my-4">`
+            `<${tag} class="${prefix} ">`
           );
         }
       }

@@ -38,6 +38,15 @@
       /* Remove default bullets */
     }
 
+    ul li pre {
+        margin-left: -1em;
+        padding: 1em;
+    }
+
+    pre {
+        padding: 1em;
+    }
+
     li.listyle::before {
       content: "\2022";
       /* Add content: \2022 is the CSS Code/unicode for a bullet */
