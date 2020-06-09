@@ -2,7 +2,7 @@
   <v-container>
     <div v-html="convertMarktoHtml" />
 
-    {{convertMarktoHtml}}
+
   </v-container>
 </template>
 

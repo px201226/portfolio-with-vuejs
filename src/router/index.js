@@ -6,19 +6,19 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: '홈',
     component: () => import('../views/layout-home.vue')
   },
 
   {
     path: '/projects',
-    name: 'Projects',
+    name: '프로젝트',
     component: () => import('../views/layout-project-list.vue')
   },
 
   {
     path: '/projects/:id',
-    name: 'projectview',
+    name: '상세보기',
     component: () => import( '../views/layout-project-view.vue')
   },
 

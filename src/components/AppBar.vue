@@ -11,7 +11,7 @@
           </div>
 
           <v-toolbar-title class="text-uppercase font-weight-bold toolbar-title mx-5">
-            <span class="headline">{{this.$route.name}}</span>
+              <router-link style="color:black;" :to="$route.path"  @click.native="reload" >{{this.$route.name}}</router-link>
           </v-toolbar-title>
           <v-spacer />
 
@@ -67,6 +67,7 @@ export default {
   name: "app-bar",
   data() {
     return {
+      routerID: this.$router.currentRoute,
       drawer: null,
       links: [
         { icon: "mdi-home", text: "Home", route: "/" },
@@ -80,8 +81,21 @@ export default {
   methods: {
     toggleDrawer() {
       this.drawer = false;
+    },
+
+    reload(){
+      //this.$router.go();
+       window.scrollTo(0,0);
+        
     }
   }
 };
 </script>
 
+<style >
+.router-link-exact-active {
+  color: white;
+    text-decoration: none;
+}
+
+</style>

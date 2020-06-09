@@ -69,7 +69,7 @@ export default {
   },
   methods: {
     goTodetail(pid, detailURL) {
-      this.$router.push({ name: "projectview", params: { id: pid } });
+      this.$router.push({ name: "상세보기", params: { id: pid } });
     },
   }
 };
