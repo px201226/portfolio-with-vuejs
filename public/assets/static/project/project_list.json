@@ -18,8 +18,8 @@
     {
         "pid" : "portfolio",
         "thumbnail": "assets/static/portfolio.png",
-        "title": "포트폴리오 페이지",
-        "subtitle": "VueJs, Vuetify, Webpack",
+        "title": "Linux 허프만 알고리즘을 이용한 멀티 프로세스 압축",
+        "subtitle": "Linux, C",
         "description": "ㅇㅇㅇ"
     }
 ]
