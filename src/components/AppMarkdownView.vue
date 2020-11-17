@@ -1,15 +1,13 @@
 <template>
   <v-container>
     <div v-html="convertMarktoHtml" />
-
-
   </v-container>
 </template>
 
 
 
 <script>
-import {eventBus} from "../main.js";
+import { eventBus } from "../main.js";
 
 const marked = require("marked");
 const axios = require("axios");
@@ -45,15 +43,12 @@ export default {
   },
 
   created() {
-    eventBus.$on('receivedURL',markedURL => {
-       
-          console.log("received " + markedURL);
-          
-          this.fetchData(markedURL);
-        
+    eventBus.$on("receivedURL", markedURL => {
+      console.log("received " + markedURL);
+
+      this.fetchData(markedURL);
     });
   },
-
 
   computed: {
     convertMarktoHtml() {
@@ -77,7 +72,7 @@ export default {
     }
   },
 
-  methods: { 
+  methods: {
     fetchData(markedURL) {
       axios.get(markedURL).then(response => {
         this.markdown = response.data;
@@ -85,7 +80,6 @@ export default {
     },
 
     setCustomRenderer(renderer) {
-
       // h1,h2 태그 커스텀
       renderer.heading = function(text, level) {
         if (level <= 2) {
@@ -107,10 +101,9 @@ export default {
       renderer.hr = function() {
         return '<hr color="#ECEFF1" size="7">';
       };
-      
 
       // li 태그 커스텀
-      renderer.listitem = function(text, task, checked){
+      renderer.listitem = function(text, task, checked) {
         return '<li class="none listyle my-3">' + text + "</li>";
       };
 
@@ -118,8 +111,12 @@ export default {
         return '<code style="color:red">' + code + "</code>";
       };
 
-       renderer.code = function(code) {
-        return '<pre><code style="color:black; font-family:bold; background-color:rgba(0,0,0,0); box-shadow: none">' + code + "</code></pre>";
+      renderer.code = function(code) {
+        return "<pre><b>" + code + "</b></pre>";
+      };
+
+      renderer.image = function(href, title, text) {
+        return '<img src="' + href + '" alt="">';
       };
     },
 
