@@ -18,7 +18,7 @@
     {
         "pid" : "compression",
         "thumbnail": "assets/static/compression.png",
-        "title": "Linux 허프만 알고리즘을 이용한 멀티 프로세스 압축",
+        "title": "허프만 알고리즘을 이용한 멀티 프로세스 압축",
         "subtitle": "Linux, C",
         "description": "ㅇㅇㅇ"
     }
