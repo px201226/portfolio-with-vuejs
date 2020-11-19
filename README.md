@@ -17,7 +17,9 @@ marked.js
 ### 1. 프로필 화면   
 ![ScreenShoot](https://raw.githubusercontent.com/GisuLee/portfolio-with-vuejs/master/main_pc.png)     
 ![ScreenShoot](https://raw.githubusercontent.com/GisuLee/portfolio-with-vuejs/master/main_m.png)    
+
 화면크기에 따라 변하는 반응형 웹으로 제작하여 태블릿, 스마트폰, PC 모두 대응할 수 있도록 하였습니다.
+
 ---------------------------------
 
 ### 2. 프로젝트 페이지
@@ -33,7 +35,7 @@ marked.js
 
 ---------------
 
-## 3. 사용법   
+## 4. 사용법   
 ### Project install
 ```
 git clone https://github.com/GisuLee/portfolio-with-vuejs.git 
