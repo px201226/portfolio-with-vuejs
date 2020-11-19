@@ -3,7 +3,7 @@
         "pid" : "lostfound",
         "thumbnail": "assets/static/lostfound.jpg",
         "title": "분실물 관리 시스템",
-        "subtitle": "Android, REST API, Oracle DB",
+        "subtitle": "Android, REST API",
         "description": "ㅇㅇㅇ"
         
     },
