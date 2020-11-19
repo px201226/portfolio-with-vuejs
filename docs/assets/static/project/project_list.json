@@ -21,5 +21,13 @@
         "title": "허프만 알고리즘을 이용한 멀티 프로세스 압축",
         "subtitle": "Linux, C",
         "description": "ㅇㅇㅇ"
+    },
+    {
+        "pid" : "msa_arcitecture",
+        "thumbnail": "assets/static/msa_arcitecture.jpg",
+        "title": "자바 기반의 마이크로서비스 아키텍쳐 구현",
+        "subtitle": "Java, Microserivce, Spring boot, Cloud, DB",
+        "description": "ㅇㅇㅇ"
     }
+    
 ]
