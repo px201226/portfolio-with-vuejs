@@ -1,14 +1,8 @@
-# readme
+# Vue.js를 활용한 포트폴리오 제작
 
 ## Introduction
 
 > 웹 프론트엔드의 동작방식을 이해하고 HTML, javascript, Vue.js 등 프론트 기술스택을 활용하여 포트폴리오 페이지를 제작하고, Github를 통해 호스팅한다.
-
-![readme%20d41733d58b51405eb51a69302afb42e5/Untitled.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled.png)
-
-![readme%20d41733d58b51405eb51a69302afb42e5/Untitled%201.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled%201.png)
-
-![readme%20d41733d58b51405eb51a69302afb42e5/Untitled%202.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled%202.png)
 
 ## Skill
 
@@ -67,3 +61,11 @@ npm run serve
 ```
 npm run build
 ```
+
+## Screenshot
+
+![readme%20d41733d58b51405eb51a69302afb42e5/Untitled.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled.png)
+
+![readme%20d41733d58b51405eb51a69302afb42e5/Untitled%201.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled%201.png)
+
+![readme%20d41733d58b51405eb51a69302afb42e5/Untitled%202.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled%202.png)
