@@ -20,7 +20,7 @@
               </v-btn>
             </v-row>
           </v-col>
-          <v-col class="my-auto text-center" cols="12" md="6">
+          <v-col class="my text-center" cols="12" md="6">
             <v-img src="@/images/face.png" class="grey lighten-2 face mx-auto" width="200" />
           </v-col>
         </v-row>
@@ -29,7 +29,7 @@
             <v-img class="grey lighten-2 face mx-auto" src="@/images/face.png" width="200" />
           </v-col>
           <v-col cols="12" md="6">
-            <MyProfile />
+             <my-profile />
             <br />
             <v-row class="text-center" justify="center">
               <v-btn color="pink lighten-1" outlined="outlined" to="/contact">
