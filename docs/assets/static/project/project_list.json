@@ -3,7 +3,7 @@
         "pid" : "lostfound",
         "thumbnail": "assets/static/lostfound.jpg",
         "title": "분실물 관리 시스템",
-        "subtitle": "Android, REST API, OPEN API",
+        "subtitle": "Android, REST API",
         "description": "ㅇㅇㅇ"
         
     },
@@ -12,14 +12,14 @@
         "pid" : "portfolio",
         "thumbnail": "assets/static/portfolio.png",
         "title": "포트폴리오 페이지",
-        "subtitle": "HTML, CSS, Javascript, Vue.JS, Webpack, Git",
+        "subtitle": "VueJs, Vuetify, Webpack",
         "description": "ㅇㅇㅇ"
     },
     {
         "pid" : "compression",
         "thumbnail": "assets/static/compression.png",
         "title": "허프만 알고리즘을 이용한 멀티 프로세스 압축",
-        "subtitle": "Linux, C, Multy Process, Shared Memory, sychronized",
+        "subtitle": "Linux, C",
         "description": "ㅇㅇㅇ"
     },
     {
