@@ -15,7 +15,7 @@
         {{work.company}}
       </div>
       <ul v-for="(content) of work.contents" :key="content">
-        <div class="my-1 grey--text text--darken-2">{{content}}</div>
+        <li class="my-1 grey--text text--darken-2">{{content}}</li>
       </ul>
       <br />
     </div>
@@ -23,7 +23,7 @@
 	 <h1 >Skill</h1>
     <v-divider></v-divider>
 	<div class="my-4 pl-3" v-for="skill of skills" v-bind:key="skill.name">
-      <h3> {{skill.name}} </h3>
+      <h3>{{skill.name}} </h3>
       <li class="my-1 grey--text text--darken-2 ml-4" v-for="(description) of skill.description" :key="description">
 		 {{description}}
       </li>

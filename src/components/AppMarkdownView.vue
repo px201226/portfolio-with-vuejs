@@ -90,7 +90,7 @@ export default {
             text +
             "</h" +
             level +
-            '><hr color="#CFD8DC" size="1" class="mt-3 mb-5">'
+            '><hr color="#CFD8DC" size="1" class="mt-1 mb-5">'
           );
         } else {
           return "<h" + level + ">" + text + "</h" + level + ">";

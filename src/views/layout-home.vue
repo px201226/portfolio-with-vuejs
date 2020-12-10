@@ -13,12 +13,6 @@
         <v-row class="pa-3 d-none d-md-flex">
           <v-col cols="12" md="6">
             <my-profile />
-
-            <v-row justify="center" class="text-center">
-              <v-btn color="pink lighten-1" outlined="outlined" to="/contact">
-                <v-icon left="left">mdi-phone-hangup</v-icon>Contact
-              </v-btn>
-            </v-row>
           </v-col>
           <v-col class="my text-center" cols="12" md="6">
             <v-img src="@/images/face.png" class="grey lighten-2 face mx-auto" width="200" />
@@ -30,14 +24,13 @@
           </v-col>
           <v-col cols="12" md="6">
              <my-profile />
-            <br />
-            <v-row class="text-center" justify="center">
+          </v-col>
+        </v-row>
+		 <v-row class="text-center" justify="center">
               <v-btn color="pink lighten-1" outlined="outlined" to="/contact">
                 <v-icon left="left">mdi-phone-hangup</v-icon>Contact
               </v-btn>
             </v-row>
-          </v-col>
-        </v-row>
       </v-container>
     </div>
     <!-- SECTION: 자기소개 -->
