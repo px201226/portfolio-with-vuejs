@@ -49,8 +49,8 @@ npm run build
 
 ## Screenshot
 
-![readme%20d41733d58b51405eb51a69302afb42e5/Untitled.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled.png)
+![readme/Untitled.png](https://github.com/GisuLee/portfolio-with-vuejs/blob/master/readme/Untitled.png?raw=true)
 
-![readme%20d41733d58b51405eb51a69302afb42e5/Untitled%201.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled%201.png)
+![readme/Untitled%201.png](https://github.com/GisuLee/portfolio-with-vuejs/blob/master/readme/Untitled%201.png?raw=true)
 
-![readme%20d41733d58b51405eb51a69302afb42e5/Untitled%202.png](readme%20d41733d58b51405eb51a69302afb42e5/Untitled%202.png)
+![readme/Untitled%202.png](https://github.com/GisuLee/portfolio-with-vuejs/blob/master/readme/Untitled%202.png?raw=true)
