@@ -21,6 +21,13 @@
         "title": "허프만 알고리즘을 이용한 멀티 프로세스 압축",
         "subtitle": "Linux, C",
         "description": "ㅇㅇㅇ"
+	},
+	{
+        "pid" : "springboot-board",
+        "thumbnail": "assets/static/springboot-board.png",
+        "title": "스프링부트와 Vue.js 로 회원 게시판 웹서비스 무중단 배포",
+        "subtitle": "Spring Boot, JPA, Security, AWS C2, Trvais-ci, Linux",
+        "description": "ㅇㅇㅇ"
     },
     {
         "pid" : "msa_arcitecture",
